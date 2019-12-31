@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
- body {
-   background-color: blue;
- }
-
 html,
 body,
 .wrapper {
@@ -86,6 +82,11 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+.btn2 {
+background-color: #c0c7cf;
+float: right;
 }
 
 button[disabled] {
