@@ -119,6 +119,10 @@ button[disabled] {
   overflow: hidden;
 }
 
+.custom-range{
+  width:675px;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -134,5 +138,23 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+    width:170px;
+  }
+  .btn2{
+    float:left;
+    width:170px;
+  }
+  .custom-range{
+    width:160px;
+  }
+  h2{
+    font-size:medium;
+  }
+  h1{
+    font-size:large;
+    color:red;
+  }
+  .control{
+    font-size:small;
   }
 }

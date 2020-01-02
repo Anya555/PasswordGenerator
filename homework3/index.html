@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -19,6 +21,24 @@
                 <h2>Generate a Password</h2>
             </div>
             <div class="card-body">
+                <div class="control checkbox">
+                    <input type="checkbox" class="control-input" id="lowercase">
+                    <label class="control-label" for="lowercase">Check to use lowercase characters</label>
+                </div>
+                <div class="control checkbox">
+                    <input type="checkbox" class="control-input" id="uppercase">
+                    <label class="control-label" for="uppercase">Check to use uppercase characters</label>
+                </div>
+                <div class="control checkbox">
+                    <input type="checkbox" class="control-input" id="special">
+                    <label class="control-label" for="special">Check to use special characters</label>
+                </div>
+                <div class="control checkbox">
+                    <input type="checkbox" class="control-input" id="numbers">
+                    <label class="control-label" for="numbers">Check to use numbers</label>
+                </div>
+                <label for="customRange2">Password length</label>
+                <input type="range" class="custom-range" min="8" max="128" id="customRange2">
                 <textarea readonly id="password" placeholder="Your Secure Password"
                     aria-label="Generated Password"></textarea>
             </div>
@@ -26,11 +46,11 @@
                 <button id="generate" class="btn">Generate Password</button>
                 <button id="copy" class="btn btn2">Copy to clipboard</button>
             </div>
-           
-        
-    </div>
-    <script src="assets/js/main.js">
-    </script>
+
+
+        </div>
+        <script src="assets/js/main.js">
+        </script>
 </body>
 
 </html>
