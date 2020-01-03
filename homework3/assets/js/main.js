@@ -26,20 +26,26 @@ function generatePassword() {
    var characters = "";
 
   // checking if certain character type has been chosen by a user and concatinating a new value to that based on chosen character types
+  var optionsChecked = 0;
+
   if (specialChar.checked) {
     characters += special;
+    optionsChecked++;
   }
   if (numericChar.checked) {
     characters += numbers;
+    optionsChecked++;
   }
   if (lowercaseChar.checked) {
     characters += lowercase;
+    optionsChecked++;
   }
   if (uppercaseChar.checked) {
     characters += uppercase;
+    optionsChecked++;
   } 
   // alerting a user that at least one character type has to be chosen by making an alert
-  else {
+  if(optionsChecked === 0) {
     alert("Please choose at least one character type");
   }
  
